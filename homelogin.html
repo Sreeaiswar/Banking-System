@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Banking System</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #2c3e50; /* Updated background color */
+        }
+
+        header {
+            background-color: #3498db; /* Updated header color */
+            color: #fff;
+            text-align: center;
+            padding: 1em 0;
+            overflow: hidden; /* Ensure the marquee doesn't overflow */
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 1.5em;
+            white-space: nowrap; /* Prevent text from wrapping */
+            animation: marquee 8s linear infinite; /* Marquee animation */
+        }
+
+        @keyframes marquee {
+            0% { transform: translateX(100%); }
+            100% { transform: translateX(-100%); }
+        }
+
+        main {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #fff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+        }
+
+        section {
+            margin-bottom: 20px;
+        }
+
+        h2 {
+            color: #333;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 8px;
+        }
+
+        input {
+            width: 100%;
+            padding: 8px;
+            margin-bottom: 16px;
+            box-sizing: border-box;
+        }
+
+        button {
+            background-color: #27ae60; /* Updated button color */
+            color: #fff;
+            padding: 10px 15px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #219e54; /* Updated button hover color */
+        }
+
+        footer {
+            text-align: center;
+            padding: 10px 0;
+            background-color: #3498db; /* Updated footer color */
+            color: #fff;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Banking System - Your Financial Partner</h1>
+    </header>
+
+    <main>
+        <section id="login">
+            <h2>Login</h2>
+            <!-- Login form -->
+            <form id="loginForm">
+                <label for="username">Username:</label>
+                <input type="text" id="username" name="username" required>
+                
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" required>
+
+                <button type="button" onclick="login()">Login</button>
+            </form>
+        </section>
+
+        <!-- Other sections like dashboard, transaction history, loan information, forms, etc., can be added here -->
+    </main>
+
+    <footer>
+        <p>&copy; 2023 Banking System</p>
+    </footer>
+
+    <!-- Add any necessary scripts at the end -->
+    <script>
+        function login() {
+            // Implement login functionality using JavaScript
+            // You'd typically send a request to the server for authentication
+            // and handle the response accordingly.
+        }
+    </script>
+</body>
+</html>

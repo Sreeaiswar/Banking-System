@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Banking System</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #2c3e50;
+        }
+
+        header {
+            background-color: #3498db;
+            color: #fff;
+            text-align: center;
+            padding: 1em 0;
+            overflow: hidden;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 1.5em;
+            white-space: nowrap;
+            animation: marquee 8s linear infinite;
+        }
+
+        @keyframes marquee {
+            0% { transform: translateX(100%); }
+            100% { transform: translateX(-100%); }
+        }
+
+        main {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #fff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+        }
+
+        section {
+            margin-bottom: 20px;
+        }
+
+        h2 {
+            color: #333;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 8px;
+        }
+
+        input {
+            width: 100%;
+            padding: 8px;
+            margin-bottom: 16px;
+            box-sizing: border-box;
+        }
+
+        button {
+            background-color: #27ae60;
+            color: #fff;
+            padding: 10px 15px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #219e54;
+        }
+
+        .dashboard {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            background-color: #f1c40f; /* Dashboard background color */
+            padding: 20px;
+            border-radius: 8px;
+        }
+
+        .dashboard-item {
+            text-align: center;
+        }
+
+        .dashboard-item img {
+            width: 50px;
+            height: 50px;
+            margin-bottom: 10px;
+        }
+
+        .dashboard-item button {
+            background-color: #3498db; /* Dashboard button color */
+        }
+
+        .dashboard-item button:hover {
+            background-color: #2980b9; /* Dashboard button hover color */
+        }
+
+        footer {
+            text-align: center;
+            padding: 10px 0;
+            background-color: #3498db;
+            color: #fff;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Banking System - Your Financial Partner</h1>
+    </header>
+
+    <main>
+        <section id="dashboard" class="dashboard">
+            <div class="dashboard-item">
+                <img src="balance-icon.png" alt="Balance Icon">
+                <h3>Account Balance</h3>
+                <p>$5,000</p>
+            </div>
+
+            <div class="dashboard-item">
+                <img src="deposit-icon.png" alt="Deposit Icon">
+                <h3>Deposit</h3>
+                <button type="button" onclick="deposit()">Deposit</button>
+            </div>
+
+            <div class="dashboard-item">
+                <img src="withdraw-icon.png" alt="Withdraw Icon">
+                <h3>Withdraw</h3>
+                <button type="button" onclick="withdraw()">Withdraw</button>
+            </div>
+
+            <div class="dashboard-item">
+                <img src="transfer-icon.png" alt="Transfer Icon">
+                <h3>Transfer Funds</h3>
+                <button type="button" onclick="transfer()">Transfer</button>
+            </div>
+
+            <div class="dashboard-item">
+                <img src="statement-icon.png" alt="Statement Icon">
+                <h3>View Statements</h3>
+                <button type="button" onclick="viewStatements()">View Statements</button>
+            </div>
+        </section>
+
+        <!-- Other sections like transaction history, loan information, etc., can be added here -->
+    </main>
+
+    <footer>
+        <p>&copy; 2023 Banking System</p>
+    </footer>
+
+    <script>
+        function deposit() {
+            // Implement deposit functionality using JavaScript
+            // You'd typically show a form or a modal for depositing money.
+        }
+
+        function withdraw() {
+            // Implement withdraw functionality using JavaScript
+            // You'd typically show a form or a modal for withdrawing money.
+        }
+
+        function transfer() {
+            // Implement transfer functionality using JavaScript
+            // You'd typically show a form or a modal for transferring funds.
+        }
+
+        function viewStatements() {
+            // Implement view statements functionality using JavaScript
+            // You'd typically fetch and display transaction history.
+        }
+    </script>
+</body>
+</html>
